@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body * {
+  font-family: 'Inter', sans-serif;;
+  line-height: 160%;
+}
+
+body {
+  background-image: url(./img/bg.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;  
+}
+
+header {
+  padding-top: 3.2rem;
+  height: calc(12.0rem + 3.2rem);
+}
+
+header div {
+  width:  12.0rem;
+  margin: auto;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  border-radius: 50%;
+  
+  display: flex;
+  padding: 4px;
+  transition: transform 1s;
+}
+
+header img {
+  width: 100%;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+main {  
+  max-width: 58.0rem;
+  width: 90%;
+  margin: 3.2rem auto;
+ 
+  display: grid;
+  gap: 2.4rem;
+  
+}
+
+
+section {
+  color: white;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top: 4px;
+  border-radius: 1rem;
+}
+
+section div {
+  background-color: #2A2634;
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 160%;
+
+  letter-spacing: -0.47px;
+
+  color: #FFFFFF;
+}
+
+section p {
+  font-weight: 400; 
+  font-size: 1.6rem;
+  
+  letter-spacing: -0.18px;
+
+  color: #A1A1AA;
+}
+
+section ul {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  margin-top: 2.4rem;
+}
+
+.games-list img {
+  border-radius: 8px;
+  width: 9rem;
+  transition: 1s; 
+  animation: fromTop .4s .5s backwards;
+}
+
+.streamers-list img {
+  border: 1px solid #443E54;
+  border-radius: 50%;
+  width: 7rem;
+  border: 2px solid #443E54;
+
+  transition: 1s;
+  animation: fromTop .6s .7s backwards;
+}
+
+.networks-list img{
+  transition: 1s;
+  animation: fromTop 700ms 1s backwards;
+} 
+
+ body img:hover {
+  scale: 1.1;
+}
+
+header div {
+  animation: fromTop .2s .3s backwards;
+ }
+
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
